@@ -1,0 +1,12 @@
+<div>
+  <p>Inner1 - Showing value</p>
+  {{ innerVariable }}
+  <mat-select [value]="innerVariable" (selectionChange)="selChanged($event)">
+    <mat-select-trigger>click to open {{ innerVariable }}</mat-select-trigger>
+    <mat-option value="initial">initial</mat-option>
+    <mat-option value="data-initial">data-initial</mat-option>
+    <mat-option value="async">async</mat-option>
+    <mat-option value="via service">via service</mat-option>
+    <mat-option value="via event">via event</mat-option>
+  </mat-select>
+</div>
